@@ -1,0 +1,23 @@
+# Secrets
+.env
+.env.*
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Audio and temporary files
+*.wav
+*.mp3
+*.log
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
