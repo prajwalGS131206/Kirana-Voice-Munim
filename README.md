@@ -52,4 +52,57 @@ cd Kirana-Voice-Munim
 ### 2. Create a virtual environment
 
 ```bash
-python -m venv .ven
+python -m venv .venv
+```
+
+### 3. Activate the environment
+
+Windows:
+
+```bash
+.venv\Scripts\activate
+```
+
+### 4. Install dependencies
+
+Install the dependencies listed in your project's requirements file.
+
+### 5. Configure environment variables
+
+Create a `.env` file and add your required API credentials.
+
+**Never upload your `.env` file or API keys to GitHub.**
+
+### 6. Run the application
+
+```bash
+uvicorn app.main:app --reload
+```
+
+### 7. Open API documentation
+
+```text
+http://127.0.0.1:8000/docs
+```
+
+## 📂 Project Structure
+
+```text
+Kirana-Voice-Munim/
+├── app/
+│   ├── database/
+│   ├── services/
+│   ├── static/
+│   ├── config.py
+│   └── main.py
+├── test_stt_audio.py
+├── test_stt_connection.py
+├── test_tts_connection.py
+├── test_tts.wav
+├── README.md
+└── .gitignore
+```
+
+## 🎯 Project Objective
+
+To make digital bookkeeping accessible to small kirana stores through natural voice interactions, reducing manual record-keeping and making customer credit tracking easier.
